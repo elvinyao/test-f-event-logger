@@ -1,0 +1,15 @@
+# 服务器监听地址和端口
+server:
+  address: ":8080"
+
+# 用于验证 Webhook 请求的认证令牌
+# 在 Mattermost Focalboard 中设置 Webhook 时，需要使用此令牌
+auth:
+  token: "a-very-secret-token-you-should-change"
+
+# 日志配置
+log:
+  # 日志级别: DEBUG, INFO, WARN, ERROR
+  level: "INFO"
+  # 日志文件路径。如果留空，则输出到标准输出 (console)
+  filePath: ""
